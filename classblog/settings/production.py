@@ -30,7 +30,7 @@ DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
 import os
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'i^9ep#p2opk(8i9pb7g=qtz3ktvxsevhjivi(0g18#v=hg&5t)')
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['pacific-shelf-61793.herokuapp.com']
 
 
 # Application definition
