@@ -1,0 +1,25 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h1>My Blogs Home</h1>
+
+  <p>Welcome to <em>My Blogs</em>, a very basic Django website developed as a tutorial example./p>
+
+<!-- <h2>Dynamic content</h2>
+
+  <p>The MyBlog has the following record counts:</p>
+  <ul>
+    <li><strong>Blogs:</strong> {{ num_blogs }}</li>
+    <li><strong>Authors:</strong> {{ num_authors }}</li>
+  </ul> -->
+
+  {% for post in posts %}
+    <h2>
+        {{ post.title }}
+    </h2>
+    <p class="date">
+      Published {{ post.publish }} by {{ post.author }}
+    </p>
+    {{ post.body }}
+  {% endfor %}
+{% endblock %}

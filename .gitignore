@@ -1,0 +1,5 @@
+# Text backup files
+*.bak
+.DS_Store
+#Database
+*.sqlite3

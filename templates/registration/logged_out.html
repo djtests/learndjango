@@ -1,0 +1,13 @@
+<!-- Template context:
+
+title: The string “Logged out”, localized.
+site: The current Site, according to the SITE_ID setting. If you don’t have the site framework installed, this will be set to an instance of RequestSite, which derives the site name and domain from the current HttpRequest.
+site_name: An alias for site.name. If you don’t have the site framework installed, this will be set to the value of request.META['SERVER_NAME']. For more on sites, see The “sites” framework. -->
+
+{% extends "base_generic.html" %}
+
+{% block content %}
+<p>Logged out!</p>  
+
+<a href="{% url 'login'%}">Click here to login again.</a>
+{% endblock %}
